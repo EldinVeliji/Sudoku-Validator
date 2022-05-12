@@ -65,7 +65,7 @@ Result: **False**
 # How to read a csv file using the [pandas](https://pandas.pydata.org) library
 
 ## Downloading the pandas library
-If you want to use the pandas library you have to install it first by either using the ![pip](https://pypi.org/project/pip/) or ![conda](https://docs.conda.io/en/latest/)
+If you want to use the pandas library you have to install it first by either using the ![pip](https://pypi.org/project/pip/) or ![conda](https://docs.conda.io/en/latest/) installer:
 
 ```bash
 conda install pandas
@@ -88,4 +88,8 @@ df = pd.DataFrame(sudoku)
 display(df.iloc[1) # Specific row
 
 column = sudoku.head() # get a column
+```
+To get a specific cell from the spreadsheet:
+```bash
+df.iat[0,0] # This will give you the first cell of the grid
 ```
