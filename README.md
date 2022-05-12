@@ -65,7 +65,7 @@ Result: **False**
 # How to read a csv file using the [pandas](https://pandas.pydata.org) library
 
 ## Downloading the pandas library
-If you want to use the pandas library you have to install it first by either using the ![pip](https://pypi.org/project/pip/) or ![conda](https://docs.conda.io/en/latest/) installer:
+If you want to use the pandas library you have to install it first by either using the [pip](https://pypi.org/project/pip/) or [conda](https://docs.conda.io/en/latest/) installer:
 
 ```bash
 conda install pandas
