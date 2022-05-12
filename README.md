@@ -1,5 +1,5 @@
 # Sudoku-Validator
-My solution to solving a 9x9 sudoku using python
+My solution to solving a 9x9 sudoku grid using python
 
 # Starting the application
 
