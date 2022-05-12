@@ -7,6 +7,85 @@ To start the application simply download the file [sudokuValidator.py] and execu
 
 In this validation process there were nine different cases that were reviewed, and I will go through each one of them.
 
-## Use Case 1 basicGrid
+## Use Case 1 - basicGrid
 
-The first case was just a simple 9x9 grid as shown in the picture
+![](UseCases/UseCase1.PNG)
+
+Result: **True**
+
+## Use Case 2 - basicGrid2
+
+![](UseCases/UseCase2.PNG)
+
+Result: **True**
+
+## Use Case 3 - columnError
+
+![](UseCases/UseCase3.PNG)
+
+Result: **False**
+
+## Use Case 4 - outOfRangeError
+
+![](UseCases/UseCase4.PNG)
+
+Result: **False**
+
+## Use Case 5 - outOfRangeError2
+
+![](UseCases/UseCase5.PNG)
+
+Result: **False**
+
+## Use Case 6 - rowError
+
+![](UseCases/UseCase6.PNG)
+
+Result: **False**
+
+## Use Case 7 - rubbishError
+
+![](UseCases/UseCase7.PNG)
+
+Result: **False**
+
+## Use Case 8 - subGridError
+
+![](UseCases/UseCase8.PNG)
+
+Result: **False**
+
+## Use Case 9 - sumValidationError
+
+![](UseCases/UseCase9.PNG)
+
+Result: **False**
+
+
+# How to read a csv file using the [pandas](https://pandas.pydata.org) library
+
+## Downloading the pandas library
+If you want to use the pandas library you have to install it first by either using the ![pip](https://pypi.org/project/pip/) or ![conda](https://docs.conda.io/en/latest/)
+
+```bash
+conda install pandas
+```
+
+```bash
+pip install pandas
+```
+
+## Accessing a .csv file using pandas
+
+To access a file all you have to do is write the code below
+```bash
+import pandas as pd
+sudoku = pd.read_csv("Directory of your csv file")
+```
+To access a specific column or row:
+```bash
+df = pd.DataFrame(sudoku)
+display(df.iloc[1) # Specific row
+
+column = sudoku.head() # get a column
+```
